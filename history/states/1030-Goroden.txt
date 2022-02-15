@@ -1,0 +1,28 @@
+
+state={
+	id=1030
+	name="STATE_1030"
+
+	history={
+		owner = ROS
+		victory_points = {
+			3393 1
+		}
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = LIT
+		add_core_of = BLR
+		add_core_of = ROS
+
+	}
+
+	provinces={
+		3366 3393 6413 9274 
+	}
+	manpower=411284
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
