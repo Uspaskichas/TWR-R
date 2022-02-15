@@ -1,0 +1,16 @@
+﻿l_english:
+    
+    #Events
+    twrlithuania.0.t:0 "Lithuanian Independence!"
+    twrlithuania.0.d:0 "Today we celebrate in our capital Vilnius our victory against German occupation with millitary parade. We might have won this war but we will need to fight more if we want to fully secure our teritories with new neighbours."
+    twrlithuania.0.a:0 "Glory to Lithuania!"
+    
+    twrlithuania.1.t:0 "Warnings from Latvia!"
+    twrlithuania.1.d:0 "Latvia warns Lithuanian goverment to give back Kurzeme. We took Kurzeme when fighting germans and kept it. The Latvian army is preapering to invade and retake the lands, will we back down or defend those lands?"
+    twrlithuania.1.a:0 "We took those lands and we will keep them!"
+    twrlithuania.1.b:0 "It's Latvian teritory we should give it back."
+    
+    twrlithuania.2.t:0 "Victory in Latvia!"
+    twrlithuania.2.d:0 "We have conquered Latvia now we nead to think how we will administrate new teritories. We can ether annex it all and have problems with the people or we could annex Kurzeme and puppet the rest. People in Kurzeme are more friendly to Lithuanians and more simmilar they can be integrated but the rest would be uprising and damaging us."
+    twrlithuania.2.a:0 "We shall take Kurzeme and puppet the rest."
+    twrlithuania.2.b:0 "Lithuania shall annex all!"
