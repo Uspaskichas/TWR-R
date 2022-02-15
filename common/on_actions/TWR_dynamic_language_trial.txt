@@ -1,0 +1,3561 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit={FROM.FROM={state = 219}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Moscow"
+						set_province_name = { id = 6380 name = "Moscow" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Moskau"
+						set_province_name = { id = 6380 name = "Moskau" }
+					}
+				}
+			}
+			if = {
+				limit={FROM.FROM={state = 195}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Petrograd"
+						set_province_name = { id = 3151 name = "Petrograd" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag = german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Adolfsburg"
+						set_province_name = { id = 3151  name = "Adolfsburg" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag = is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "St. Petersburg"
+						set_province_name = { id = 3151  name = "St. Petersburg" }
+					}
+				}
+				
+			}
+			if = {
+				limit={FROM.FROM={state = 137}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Crimea"
+						set_province_name = { id = 3686 name = "Sevastopol" }
+						set_province_name = { id = 11649 name = "Mizhvodne" }
+						set_province_name = { id = 9680 name = "Kerch" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Gotenland"
+						set_province_name = { id = 3686  name = "Theodorichshafen" }
+						set_province_name = { id = 11649 name = "Mitzenwald" }
+						set_province_name = { id = 9680 name = "Bospor" }
+					}
+				}
+			}
+			if = {
+				limit={FROM.FROM={state = 991}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Berdyans'k"
+						set_province_name = { id = 13399 name = "Berdyans'k" }
+
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Reichenberg"
+						set_province_name = { id = 13399  name = "Reichenberg" }
+
+					}
+				}
+			}
+			if = {
+				limit={FROM.FROM={state = 990}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Mariupol"
+						set_province_name = { id = 13398 name = "Mariupol" }
+
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Kaiserdorf"
+						set_province_name = { id = 13398  name = "Kaiserdorf" }
+
+					}
+				}
+			}
+			
+			if = {
+				limit={FROM.FROM={state = 236}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Astrakhan"
+						set_province_name = { id = 9753 name = "Astrakhan" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Etil"
+						set_province_name = { id = 9753  name = "Etil" }
+					}
+				}
+			}
+			if = {
+				limit={FROM.FROM={state = 854}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Baku"
+						set_province_name = { id = 7661 name = "Baku" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Windestadt"
+						set_province_name = { id = 7661  name = "Windestadt" }
+					}
+				}
+			}
+			if = {
+				limit={FROM.FROM={state = 217}}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Volgograd"
+						set_province_name = { id = 3529 name = "Volgograd" }
+						set_state_name = "Volgograd"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Volgaburg"
+						set_province_name = { id = 3529  name = "Volgaburg" }
+						set_state_name = "Volgaburg"
+					}
+				}
+			}
+			if = {
+				limit={FROM.FROM={state = 107}}
+				if={
+					limit = {
+						has_country_flag=is_ss_puppet
+						FROM.FROM={NOT={has_state_flag=is_ss_puppet}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_ss_puppet
+						set_state_name = "Prinz-Eugen-Stadt"
+						set_province_name = { id = 11586 name = "Prinz-Eugen-Stadt" }
+					}
+				}
+				if={
+					limit = {
+						NOT = { has_country_flag=is_ss_puppet }
+						FROM.FROM={has_state_flag=is_ss_puppet}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_name = "Belgrade"
+						set_province_name = { id = 11586  name = "Belgrade" }
+					}
+				}
+				
+			}
+			if = { 	######## Lodz ########
+				limit={FROM.FROM={state = 87}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Litzmannstadt"
+						set_province_name = { id = 9508  name = "Litzmannstadt" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Lodzkie"
+						set_province_name = { id = 9508 name = "Lódz" }
+					}
+				}
+				
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Lodz"
+						set_province_name = { id = 9508 name = "Lodz" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Lodz"
+						set_province_name = { id = 9508 name = "Lodz" }
+					}
+				}
+				
+			}
+			if = { 	######## Warsaw ########
+				limit={FROM.FROM={state = 10}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Warschau"
+						set_province_name = { id = 3544  name = "Warschau" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 3544 name = "Warszawa" }
+						set_state_name = "Warsaw"
+					}
+				}
+				
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Warsaw"
+						set_province_name = { id = 3544 name = "Warsaw" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Warsaw"
+						set_province_name = { id = 3544 name = "Warsaw" }
+					}
+				}
+				
+			}
+			if = { 	######## Brussels ########
+				limit={FROM.FROM={state = 6}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 516  name = "Brüssel" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 516 name = "Brussels" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 516 name = "Brussels" }
+					}
+				}
+				
+			}
+				if = { 	######## Pomerania ########
+				limit={FROM.FROM={state = 63}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Hinterpommern"
+						set_province_name = { id = 11372 name = "Stolp" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Hinter-Pomerania"
+						set_province_name = { id = 11372 name = "Stolp" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Zachodniepomorskie"
+						set_province_name = { id = 11372 name = "Sluptsk" }
+					}
+				}
+				
+			}
+			if = { 	######## Upper Silesia ########
+				limit={FROM.FROM={state = 67}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Oberschlesien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Upper Silesia"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Opolskie"
+					}
+				}
+				
+			}
+			if = { 	######## Ostmark ########
+				limit={FROM.FROM={state = 68}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Ostmark"
+						set_province_name = { id = 3473 name = "Küstrin" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Ostmark"
+						set_province_name = { id = 3473 name = "Küstrin" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Lubuskie"
+						set_province_name = { id = 3473 name = "Kostrzyn" }
+					}
+				}
+				
+			}
+			
+			if = { 	######## Netze / South West Prussia ########
+				limit={FROM.FROM={state = 798}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Westpreussen"
+						set_province_name = { id = 9263 name = "Gotenhafen" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "West Prussia"
+						set_province_name = { id = 9263 name = "Gdingen" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Kujawsko-Pomorskie"
+						set_province_name = { id = 9263 name = "Gdynia" }
+					}
+				}
+				
+			}
+			
+			if = { 	######## Strasbourg ########
+				limit={FROM.FROM={state = 28}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9503  name = "Straßburg" }
+						set_province_name = { id = 678  name = "Mülhausen" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9503 name = "Strasbourg" }
+						set_province_name = { id = 678  name = "Mulhouse" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9503 name = "Strasbourg" }
+						set_province_name = { id = 678  name = "Mulhouse" }
+					}
+				}
+				
+			}
+			if = { 	######## Nancy ########
+				limit={FROM.FROM={state = 763}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11516  name = "Nanzig" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11516 name = "Nancy" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11516 name = "Nancy" }
+					}
+				}
+				
+			}
+			if = { 	######## Poznan ########
+				limit={FROM.FROM={state = 86}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6558  name = "Posen" }
+						set_province_name = { id = 243 name = "Bromberg" }
+						set_state_name = "Wartheland"
+					}
+				}
+					if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 6558 name = "Poznań" }
+						set_province_name = { id = 243 name = "Bydgoszcz" }
+						set_state_name = "Wielkopolskie"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Poznan"
+						set_province_name = { id = 6558 name = "Poznan" }
+						set_province_name = { id = 243 name = "Bromberg" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Poznan"
+						set_province_name = { id = 6558 name = "Poznan" }
+						set_province_name = { id = 243 name = "Bydgoszcz" }
+					}
+				}
+				
+			}
+			if = { 	######## Plock ########
+				limit={FROM.FROM={state = 98}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Ziechenau"
+					}
+				}
+					if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Plock"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Plock"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Plock"
+					}
+				}
+				
+			}
+				if = { 	######## Bialystok ########
+				limit={FROM.FROM={state = 97}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Neu Ostpreussen"
+						set_province_name = { id = 11301  name = "Bialenberg" }
+					}
+				}
+					if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Bialystok"
+						set_province_name = { id = 11301  name = "Bialystok" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Bialystok"
+				     	set_province_name = { id = 11301  name = "Bialystok" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Bialystok"
+						set_province_name = { id = 11301  name = "Bialystok" }
+					}
+				}
+				
+			}
+			
+			
+			
+			
+			
+			if = { 	######## Krakow ########
+				limit={FROM.FROM={state = 88}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Krakau"
+						set_province_name = { id = 9427  name = "Krakau" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 9427 name = "Kraków" }
+						set_state_name = "Krakow"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Krakow"
+						set_province_name = { id = 9427 name = "Krakow" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Krakow"
+						set_province_name = { id = 9427 name = "Krakow" }
+					}
+				}
+				
+			}
+			if = { 	######## Tallin ########
+				limit={FROM.FROM={state = 13}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3152  name = "Reval" }
+						set_state_name = "Arensburg"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3152 name = "Tallin" }
+						set_state_name = "Harju"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3152 name = "Tallin" }
+						set_state_name = "Harju"
+					}
+				}
+				
+			}
+				if = { 	######## Prague ########
+				limit={FROM.FROM={state = 9}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11542  name = "Prag" }
+					}
+				}
+			    if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 11542 name = "Praha" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11542 name = "Prague" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11542 name = "Prague" }
+					}
+				}
+				
+			}
+				if = { 	######## Lviv ########
+				limit={FROM.FROM={state = 91}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11479  name = "Lemberg" }
+						set_state_name = "Lemberg"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 11479 name = "Lwów" }
+						set_state_name = "Lwów"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11479 name = "Lviv" }
+						set_state_name = "Lwow"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11479 name = "Lviv" }
+						set_state_name = "Lviv"
+					}
+				}
+				
+			}
+				if = { 	######## Smolensk ########
+				limit={FROM.FROM={state = 242}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 306  name = "Smolau" }
+						set_state_name = "Smolau"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 306 name = "Smolensk" }
+						set_state_name = "Smolensk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 306 name = "Smolensk" }
+						set_state_name = "Smolensk"
+					}
+				}
+				
+			}
+			if = { 	######## Kharkov ########
+				limit={FROM.FROM={state = 221}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 418  name = "Karkau" }
+						set_state_name = "Severien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 418 name = "Kharkov" }
+						set_state_name = "Kharkov"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 418 name = "Kharkov" }
+						set_state_name = "Kharkov"
+					}
+				}
+				
+			}
+			if = { 	######## Luxembourg ########
+				limit={FROM.FROM={state = 8}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6583  name = "Luxemberg" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6583 name = "Luxembourg" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6583 name = "Luxembourg" }
+					}
+				}
+				
+			}
+			if = { 	######## Vilnius ########
+				limit={FROM.FROM={state = 805}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3320  name = "Wilna" }
+						set_state_name = "Wilna"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3320 name = "Vilnius" }
+						set_state_name = "Vilnius"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3320 name = "Vilna" }
+						set_state_name = "Vilna"
+					}
+				}
+				
+			}
+			if = { 	######## Bryansk ########
+				limit={FROM.FROM={state = 224}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3335  name = "Brantzig" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3335 name = "Bryansk" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3335 name = "Bryansk" }
+					}
+				}
+				
+			}
+			if = { 	######## Rostov ########
+				limit={FROM.FROM={state = 218}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9417  name = "Rostow" }
+						set_state_name = "Rostow"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9417 name = "Rostov" }
+						set_state_name = "Rostov"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9417 name = "Rostov" }
+						set_state_name = "Rostov"
+					}
+				}
+				
+			}
+				if = { 	######## Kaunas ########
+				limit={FROM.FROM={state = 11}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6296  name = "Kauen" }
+						set_province_name = { id = 9438  name = "Ponewiesch" }
+						set_state_name = "Kauen-Ponewiesch"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6296 name = "Kaunas" }
+						set_province_name = { id = 9438  name = "Panevėžys" }
+						set_state_name = "Kaunas-Panevežys"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6296 name = "Kowno" }
+						set_province_name = { id = 9438  name = "Panevez" }
+						set_state_name = "Kowno-Panevez"
+					}
+				}
+				
+			}
+			if = { 	######## Marijampolė ########
+				limit={FROM.FROM={state = 1031}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11312  name = "Marijampol" }
+						set_state_name = "Marijampol"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11312 name = "Marijampolė" }
+						set_state_name = "Marijampole"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11312 name = "Marijampole" }
+						set_state_name = "Marijampole"
+					}
+				}
+				
+			}
+			if = { 	######## Klaipėda ########
+				limit={FROM.FROM={state = 188}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3288  name = "Memel" }
+						set_state_name = "Memel"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3288 name = "Klaipėda" }
+						set_state_name = "Klaipeda"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3288 name = "Klaipėda" }
+						set_state_name = "Klaipėda"
+					}
+				}
+				
+			}
+			if = { 	######## Liepāja ########
+				limit={FROM.FROM={state = 190}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9262  name = "Libau" }
+						set_state_name = "Kurland"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9262 name = "Liepāja" }
+						set_state_name = "Kurzeme"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9262 name = "Liepāja" }
+						set_state_name = "Kurzeme"
+					}
+				}
+				
+			}
+			if = { 	######## Valmiera ########
+				limit={FROM.FROM={state = 12}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9501  name = "Wolmar" }
+						set_state_name = "Wolmar"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9501 name = "Valmiera" }
+						set_state_name = "Valmiera"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9501 name = "Valmiera" }
+						set_state_name = "Valmiera"
+					}
+				}
+				
+			}
+			if = { 	######## Šiauliai ########
+				limit={FROM.FROM={state = 189}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9483  name = "Schaulen" }
+						set_state_name = "Samogitien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9483 name = "Šiauliai" }
+						set_state_name = "Žemaitija"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9483 name = "Šiauliai" }
+						set_state_name = "Žemaitija"
+					}
+				}
+				
+			}
+			if = { 	######## Molodečnas ########
+				limit={FROM.FROM={state = 96}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 406  name = "Maladsetschna" }
+						set_state_name = "Maladsetschna"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 406 name = "Maladečina" }
+						set_state_name = "Maladečina"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 406 name = "Maladečina" }
+						set_state_name = "Maladečina"
+					}
+				}
+				
+			}
+			if = { 	######## Baranawitschy ########
+				limit={FROM.FROM={state = 95}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9304  name = "Baranawitschy" }
+						set_state_name = "Baranawitschy"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9304 name = "Baranavichy" }
+						set_state_name = "Baranavichy"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9304 name = "Baranavichy" }
+						set_state_name = "Baranavichy"
+					}
+				}
+				
+			}
+			if = { 	######## Minsk ########
+				limit={FROM.FROM={state = 206}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11370  name = "Minsk" }
+						set_state_name = "Minsk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11370 name = "Minsk" }
+						set_state_name = "Minsk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11370 name = "Minsk" }
+						set_state_name = "Minsk"
+					}
+				}
+				
+			}
+			if = { 	######## Daugavpils ########
+				limit={FROM.FROM={state = 1032}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 310  name = "Dünaburg" }
+						set_state_name = "Dünaburg"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 310 name = "Daugavpils" }
+						set_state_name = "Daugavpils"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 310 name = "Daugavpils" }
+						set_state_name = "Daugavpils"
+					}
+				}
+				
+			}
+			if = { 	######## Calais ########
+				limit={FROM.FROM={state = 762}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11548  name = "Kalen" }
+						set_province_name = { id = 575  name = "Dunkirchen" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11548 name = "Calais" }
+						set_province_name = { id = 575 name = "Dunkerque" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11548 name = "Calais" }
+						set_province_name = { id = 575 name = "Dunkerque" }
+					}
+				}
+				
+			}
+			if = { 	######## Rivne  ########
+				limit={FROM.FROM={state = 93}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11543  name = "Röwne" }
+						set_state_name = "Wolhynien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 11543 name = "Rivne" }
+						set_state_name = "Wolyn"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11543 name = "Rivne" }
+						set_state_name = "Wolyn"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11543 name = "Rivne" }
+						set_state_name = "Wolyn"
+					}
+				}
+				
+			}
+			if = { 	######## West Tver  ########
+				limit={FROM.FROM={state = 1005}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 333  name = "West Twer" }
+						set_state_name = "Twer"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 333 name = "West Tver" }
+						set_state_name = "Tver"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 333 name = "Zapadnaya Tver" }
+						set_state_name = "Tver"
+					}
+				}
+				
+			}
+				if = { 	######## Tver  ########
+				limit={FROM.FROM={state = 247}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6245  name = "Twer" }
+						set_state_name = "Ost Twer"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6245 name = "Tver" }
+						set_state_name = "East Tver"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6245 name = "Tver" }
+						set_state_name = "Vostok Tver"
+					}
+				}
+				
+			}
+				if = { 	######## Yaroslavl  ########
+				limit={FROM.FROM={state = 248}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 121  name = "Jarensk" }
+						set_state_name = "Naugard"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 121 name = "Yaroslavl" }
+						set_state_name = "Yaroslavl"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 121 name = "Yaroslavl" }
+						set_state_name = "Yaroslavl"
+					}
+				}
+				
+			}
+
+			if = { 	######## Volgodonsk  ########
+				limit={FROM.FROM={state = 238}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6490  name = "Wolgostadt" }
+						set_state_name = "Wolgawalden"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6490 name = "Volgodonsk" }
+						set_state_name = "Volgodonsk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6490 name = "Volgodonsk" }
+						set_state_name = "Volgodonsk"
+					}
+				}
+				
+			}
+					if = { 	######## Vologda  ########
+				limit={FROM.FROM={state = 351}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11213 name = "Woloberg" }
+						set_state_name = "Wolowald" 
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11213 name = "Vologda" }
+						set_state_name = "Vologda" 
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11213 name = "Vologda" }
+						set_state_name = "Vologda" 
+					}
+				}
+				
+			}
+				if = { 	######## Khmelnytskyi  ########
+				limit={FROM.FROM={state = 199}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Winnizig"
+						set_province_name = { id = 3457  name = "Winnizig" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Khmelnytskyi"
+						set_province_name = { id = 3457 name = "Khmelnytskyi" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Khmelnytskyi"
+						set_province_name = { id = 3457 name = "Khmelnytskyi" }
+					}
+				}
+				
+			}
+					if = { 	######## Lychakivskyi  ########
+				limit={FROM.FROM={state = 984}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Ost Lemberg"
+						set_province_name = { id = 491  name = "Ost Lemberg" }
+					}
+				}
+					if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Lychakivskyi"
+						set_province_name = { id = 491 name = "Lychakivskyi" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_state_name = "Lychakivskyi"
+						set_province_name = { id = 491 name = "Lychakivskyi" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_state_name = "Lychakivskyi"
+						set_province_name = { id = 491 name = "Lychakivskyi" }
+					}
+				}
+				
+			}
+					if = { 	######## Krasnodar  ########
+				limit={FROM.FROM={state = 234}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3734  name = "Kranzodea" }
+						set_state_name = "Neu Kubansland" 
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3734 name = "Krasnodar" }
+						set_state_name = "Krasnodar" 
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3734 name = "Krasnodar" }
+						set_state_name = "Krasnodar" 
+					}
+				}
+				
+			}
+				if = { 	######## Grozny  ########
+				limit={FROM.FROM={state = 233}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3672  name = "Gronzig" }
+						set_state_name = "Tschetschenien" 
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3672 name = "Grozny" }
+						set_state_name = "Chechnya-Ichkeria" 
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3672 name = "Grozny" }
+						set_state_name = "Chechnya-Ichkeria"
+					}
+				}
+				
+			}
+					if = { 	######## Novgorod  ########
+				limit={FROM.FROM={state = 263}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 117  name = "Neugarten" }
+						set_state_name = "Neugarten"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 117 name = "Novgorod" }
+						set_state_name = "Novgorod"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 117 name = "Novgorod" }
+						set_state_name = "Novgorod"
+					}
+				}
+				
+			}
+
+			if = { 	######## Koenigsberg  ########
+				limit={FROM.FROM={state = 5}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6332  name = "Königsberg" }
+						set_state_name = "Ostpreussen"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 6332 name = "Królewiec" }
+						set_state_name = "Prusy"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6332 name = "Königsberg" }
+						set_state_name = "Ostpreussen"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6332 name = "Nevskygrad" }
+						set_state_name = "Nevskygrad"
+					}
+				}
+
+				
+			}
+			if = { 	######## Breslau  ########
+				limit={FROM.FROM={state = 66}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9570  name = "Breslau" }
+						set_state_name = "Niederschiesien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 9570 name = "Wrocław" }
+						set_state_name = "Dolnoslaskie"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9570 name = "Breslau" }
+						set_state_name = "Niederschiesien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9570 name = "Breslau" }
+						set_state_name = "Niederschiesien"
+					}
+				}
+				
+			}
+					if = { 	######## Stettin  ########
+				limit={FROM.FROM={state = 62}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6282  name = "Stettin" }
+						set_state_name = "Pommern"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 6282 name = "Szczecin" }
+						set_state_name = "Szczecinski"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6282 name = "Stettin" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6282 name = "Stettin" }
+					}
+				}
+				
+			}
+			if = { 	######## Berlin/Germania  ########
+				limit={FROM.FROM={state = 855}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6521  name = "Germania" }
+						set_state_name = "Germania"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 6521 name = "Berliń" }
+						set_state_name = "Berlin"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6521 name = "Berlin" }
+						set_state_name = "Berlin"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6521 name = "Berlin" }
+						set_state_name = "Berlin"
+					}
+				}
+				
+			}
+				if = { 	######## Elbing  ########
+				limit={FROM.FROM={state = 768}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3380  name = "Elbing" }
+						set_province_name = { id = 6375  name = "Allenstein" }
+						set_state_name = "Sud-Ostpreussen"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 3380 name = "Elbląg" }
+						set_province_name = { id = 6375  name = "Olsztyn" }
+						set_state_name = "Warmia-Masuria"
+					}
+				}
+	
+		
+				
+			}
+						if = { 	######## Danzig/Gdansk  ########
+				limit={FROM.FROM={state = 85}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 362  name = "Danzig" }
+						set_state_name = "Danzig"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_province_name = { id = 362 name = "Gdańsk" }
+						set_state_name = "Gdansk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 362 name = "Danzig" }
+						set_state_name = "Danzig"
+					}
+				}
+						if = { 	######## Suwałki  ########
+				limit={FROM.FROM={state = 810}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_state_name = "Sudauen"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = polish_language
+						set_state_name = "Suwałki"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 362 name = "Suwałki" }
+						set_state_name = "Suwałki"
+					}
+				}	
+		
+				
+			}
+			if = { 	######## Rzhev  ########
+				limit={FROM.FROM={state = 246}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11349  name = "Rischau" }
+						set_state_name = "Rischau"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11349 name = "Rzhev" }
+						set_state_name = "Rzhev"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11349 name = "Rzhev" }
+						set_state_name = "Rzhev"
+					}
+				}
+				
+			}
+			if = { 	######## Vladmir  ########
+				limit={FROM.FROM={state = 1007}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9311  name = "Keitelstadt" }
+						set_state_name = "Keitelsgau"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9311 name = "Vladimir" }
+						set_state_name = "Vladimir"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9311 name = "Vladimir" }
+						set_state_name = "Vladimir"
+					}
+				}
+				
+			}
+			if = { 	######## Ivanovo  ########
+				limit={FROM.FROM={state = 253}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6269  name = "Süztenau" }
+						set_province_name = { id = 6135  name = "Kineberg" }
+						set_state_name = "Westwolga"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6269 name = "Ivanovo" }
+						set_province_name = { id = 6135 name = "Kineshma" }
+						set_state_name = "Ivanovo"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6269 name = "Ivanovo" }
+						set_province_name = { id = 6135 name = "Kineshma" }
+						set_state_name = "Ivanovo"
+					}
+				}
+	
+				
+			}
+			if = { 	######## Zaporozhe  ########
+				limit={FROM.FROM={state = 200}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11405  name = "Melitopel" }
+						set_state_name = "Grünfeld"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11405 name = "Zaporozhe" }
+						set_state_name = "Zaporozhe"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11405 name = "Zaporozhe" }
+						set_state_name = "Zaporozhe"
+					}
+				}
+				
+			}
+			if = { 	######## Dnipropetrowsk  ########
+				limit={FROM.FROM={state = 226}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11437  name = "Südigen an der Dneiper" }
+						set_province_name = { id = 11561  name = "Schiefeshorn" }
+						set_state_name = "Niederdneiper"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11437 name = "Dnipropetrowsk" }
+						set_province_name = { id = 11561 name = "Krivoi Rih" }
+						set_state_name = "Dnipropetrowsk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11437 name = "Dnipropetrowsk" }
+						set_province_name = { id = 11561 name = "Krivoi Rih" }
+						set_state_name = "Dnipropetrowsk"
+					}
+				}
+				
+			}
+			if = { 	######## Poltava ########
+				limit={FROM.FROM={state = 259}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11504  name = "Poltau" }
+						set_state_name = "Oberdneiper"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11504 name = "Poltava" }
+						set_state_name = "Poltava"		
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11504 name = "Poltava" }
+						set_state_name = "Poltava"
+					}
+				}
+				
+			}
+			if = { 	######## Brest-Litovsk ########
+				limit={FROM.FROM={state = 94}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3392  name = "Brest Litauisch" }
+						set_state_name = "Oberwolhynien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3392 name = "Brest-Litovsk" }
+						set_state_name = "Polesie"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3392 name = "Brest-Litovsk" }
+						set_state_name = "Polesie"
+					}
+				}
+				
+			}
+			if = { 	######## Kyiv ########
+				limit={FROM.FROM={state = 202}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 525  name = "Kiew" }
+						set_state_name = "Kiew"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 525 name = "Kiev" }
+						set_state_name = "Kiev"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 525 name = "Kyiv" }
+						set_state_name = "Kyiv"
+					}
+				}
+				
+			}
+		     if = { 	######## Pskov ########
+				limit={FROM.FROM={state = 209}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11202  name = "Pleskau" }
+						set_state_name = "Peipusland"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11202 name = "Pskov" }
+						set_state_name = "Pskov"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11202 name = "Pskov" }
+						set_state_name = "Pskov"
+					}
+				}
+				
+			}
+			 if = { 	######## Vitebsk ########
+				limit={FROM.FROM={state = 207}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11241  name = "Paltenschau" }
+						set_state_name = "Luchau"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11241 name = "Vitebsk" }
+						set_state_name = "Vitebsk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11241 name = "Vitebsk" }
+						set_state_name = "Vitebsk"
+					}
+				}
+				
+			}
+			if = { 	######## The Hague ########
+				limit={FROM.FROM={state = 7}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3211  name = "Den Haag" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3211 name = "The Hague" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3211 name = "The Hague" }
+					}
+				}
+				
+			}
+			if = { 	######## Voronezh ########
+				limit={FROM.FROM={state = 260}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 413  name = "Vorenungen" }
+						set_state_name = "Schwarzland"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 413 name = "Voronezh" }
+						set_state_name = "Voronezh"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 413 name = "Voronezh" }
+						set_state_name = "Voronezh"
+					}
+				}
+				
+			}
+			if = { 	######## Zhytomyr ########
+				limit={FROM.FROM={state = 201}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11514  name = "Zeilenheim" }
+						set_state_name = "Ost Wolhynien"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11514 name = "Zhytomyr" }
+						set_state_name = "Zhytomyr"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11514 name = "Zhytomyr" }
+						set_state_name = "Zhytomyr"
+					}
+				}
+				
+			}
+			if = { 	######## Velikiye Luki ########
+				limit={FROM.FROM={state = 1006}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11234  name = "Velnastadt" }
+						set_state_name = "Bögenwald"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11234 name = "Velikiye Luki" }
+						set_state_name = "Luki"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11234 name = "Velikiye Luki" }
+						set_state_name = "Luki"
+					}
+				}
+				
+			}
+			if = { 	######## Brovary ########
+				limit={FROM.FROM={state = 987}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11557  name = "Brozenbach" }
+						set_state_name = "Mirgard"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11557 name = "Brovary" }
+						set_state_name = "Brovary"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11557 name = "Brovary" }
+						set_state_name = "Brovary"
+					}
+				}
+				
+			}
+			if = { 	######## Voroshilovgrad ########
+				limit={FROM.FROM={state = 228}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 9461  name = "Voßenitz" }
+						set_state_name = "Oberdonezland"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 9461 name = "Voroshilovgrad" }
+						set_state_name = "Luhansk"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 9461 name = "Voroshilovgrad" }
+						set_state_name = "Luhansk"
+					}
+				}
+				
+			}
+			if = { 	######## Pikalevo ########
+				limit={FROM.FROM={state = 1004}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6131  name = "Pizenhof" }
+						set_state_name = "Pizenhof"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6131 name = "Pikalevo" }
+						set_state_name = "Pikalevo"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6131 name = "Pikalevo" }
+						set_state_name = "Pikalevo"
+					}
+				}
+				
+			}
+			if = { 	######## Grodno ########
+				limit={FROM.FROM={state = 1030}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3393  name = "Goroden" }
+						set_state_name = "Goroden"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3393 name = "Gardinas" }
+						set_state_name = "Gardinas"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3393 name = "Grodno" }
+						set_state_name = "Grodno"
+					}
+				}
+				
+			}
+			if = { 	######## Tikhvin  ########
+				limit={FROM.FROM={state = 264}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3140  name = "Ticklenburg" }
+						set_state_name = "Tiklenburg"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3140 name = "Tikhvin" }
+						set_state_name = "Tikhvin"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3140 name = "Tikhvin" }
+						set_state_name = "Tikhvin"
+					}
+				}
+				
+			}
+			if = { 	######## Pudoj  ########
+				limit={FROM.FROM={state = 999}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6109  name = "Krasenheim" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6109 name = "Pudoj" }
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6109 name = "Pudoj" }
+					}
+				}
+				
+			}
+			if = { 	######## Cherepovets  ########
+				limit={FROM.FROM={state = 1001}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3124  name = "Scheren" }
+						set_province_name = { id = 60  name = "Wystegra" }
+						set_state_name = "Tscherenpowitz"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3124 name = "Cherepovets" }
+						set_province_name = { id = 60  name = "Vitegra" }
+						set_state_name = "Cherepovets"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3124 name = "Cherepovets" }
+						set_province_name = { id = 60  name = "Vitegra" }
+						set_state_name = "Cherepovets"
+					}
+				}
+				
+			}
+			if = { 	######## Korosten  ########
+				limit={FROM.FROM={state = 986}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 13396  name = "Hegewald" }
+						set_state_name = "Hegewald"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 13396 name = "Berdychiv" }
+						set_state_name = "Berdychiv"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 13396 name = "Berdychiv" }
+						set_state_name = "Berdychiv"
+					}
+				}
+				
+			}
+			
+			if = { 	######## Auschwitz  ########
+				limit={FROM.FROM={state = 766}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6464  name = "Auschwitz" }
+						set_state_name = "Ostschiesen"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6464 name = "Auschwitz" }
+						set_state_name = "East Silesia"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=polish_language
+						FROM.FROM={NOT={has_state_flag=polish_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6464 name = "Oswiecim" }
+						set_state_name = "Slaskie"
+					}
+				}
+				
+			}
+			
+			if = { 	######## Äänislinna / Petrozavodsk ########
+				limit={FROM.FROM={state = 216}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 11159  name = "Aninenheim" }
+						set_state_name = "Aninenheim"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 11159 name = "Äänislinna" }
+						set_state_name = "Äänislinna"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 11159 name = "Petrozavodsk" }
+						set_state_name = "Petrozavodsk"
+					}
+				}
+				
+			}
+			
+			
+			if = { 	######## Murmansk ########
+				limit={FROM.FROM={state = 213}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 3134  name = "Murenberg" }
+						set_state_name = "Weisslapland"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 3134 name = "Muurmanni" }
+						set_state_name = "Kuola"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 3134 name = "Murmansk" }
+						set_state_name = "Murmansk"
+					}
+				}
+				
+			}
+			
+			if = { 	######## Ottosburg  ########
+				limit={FROM.FROM={state = 992}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 13400  name = "Ottosburg" }
+						set_state_name = "Ottosburg"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 13400 name = "Zolochiv" }
+						set_state_name = "Zolochiv"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 13400 name = "Zolochiv" }
+						set_state_name = "Zolochiv"
+					}
+				}
+				
+			}
+						
+			if = { 	######## Kherson  ########
+				limit={FROM.FROM={state = 196}}
+				if={
+					limit = {
+						has_country_flag=german_language
+						FROM.FROM={NOT={has_state_flag=german_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = german_language
+						set_province_name = { id = 6771  name = "Brunecken" }
+						set_province_name = { id = 737  name = "Arheim" }
+						set_state_name = "Sterzing"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=is_normal_language
+						FROM.FROM={NOT={has_state_flag=is_normal_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = is_normal_language
+						set_province_name = { id = 6771 name = "Oleksandrivka" }
+						set_province_name = { id = 737  name = "Kherson" }
+						set_state_name = "Kherson"
+					}
+				}
+				if={
+					limit = {
+						has_country_flag=russian_language
+						FROM.FROM={NOT={has_state_flag=russian_language}}
+					}
+					FROM.FROM = {
+						clear_language = yes
+						set_state_flag = russian_language
+						set_province_name = { id = 6771 name = "Oleksandrivka" }
+						set_province_name = { id = 737  name = "Kherson" }
+						set_state_name = "Kherson"
+					}
+				}
+				
+			}
+			
+			
+			
+		}
+	}
+}
