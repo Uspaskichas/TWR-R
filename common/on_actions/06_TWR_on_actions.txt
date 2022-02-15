@@ -1,0 +1,21 @@
+on_actions = {
+	on_daily = {
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					OR = {
+						190 = { is_owned_by = LIT }
+						12 = { is_owned_by = LIT }
+						1017 = { is_owned_by = LIT }
+						1032 = { is_owned_by = LIT }
+					}
+				}
+			}
+			LIT = {
+				country_event = { hours = 1 id = twrlithuania.2 } #Latvia
+			}
+		}
+	}
+}
+}
