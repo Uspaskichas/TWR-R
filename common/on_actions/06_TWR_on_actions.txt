@@ -5,10 +5,12 @@ on_actions = {
 			limit = {
 				AND = {
 					OR = {
-						190 = { is_owned_by = LIT }
-						12 = { is_owned_by = LIT }
-						1017 = { is_owned_by = LIT }
-						1032 = { is_owned_by = LIT }
+					LIT = {
+					    owns_state = 1017
+						owns_state = 12
+						owns_state = 1032
+						owns_state = 190
+						}
 					}
 				}
 			}
