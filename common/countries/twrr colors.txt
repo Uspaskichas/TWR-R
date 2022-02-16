@@ -1,0 +1,4 @@
+BGE = {
+	color = rgb { 140 170 180 }
+	color_ui = rgb { 140 170 180 }
+	}
