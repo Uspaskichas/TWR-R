@@ -1,4 +1,4 @@
-version="1.11.6"
+version="1.11.7"
 dependencies = { "Thousand Week Reich" }
 picture="thumbnail.png"
 tags={
@@ -15,5 +15,4 @@ tags={
 	"Events"
 }
 name="Thousand Week Reich Redux"
-supported_version="1.11.6"
-path="C:/Users/antan/Documents/Paradox Interactive/Hearts of Iron IV/mod/TWRR"
+supported_version="1.11.7"
