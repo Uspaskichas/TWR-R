@@ -1,0 +1,1 @@
+BGE = "countries/German.txt" # Baltic Germany
