@@ -19,8 +19,6 @@ on_actions = {
 			}
 		}
 	}
-	
-	effect = {
 		if = {
 			limit = {
 				AND = {
@@ -41,6 +39,5 @@ on_actions = {
 				country_event = { id = twrlithuania.4 days = 1 } #Lithuania Kurzeme lost
 			}
 		}
-	}
 }
 }
