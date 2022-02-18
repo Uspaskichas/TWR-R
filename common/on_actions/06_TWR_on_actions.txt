@@ -19,5 +19,25 @@ on_actions = {
 			}
 		}
 	}
+	
+	effect = {
+		if = {
+			limit = {
+				AND = {
+					OR = {
+					190 = { is_controlled_by = LAT }
+					11 = { is_controlled_by = LAT }
+					805 = { is_controlled_by = LAT }
+					}
+				}
+			}
+			LAT = {
+				country_event = { id = twrlithuania.4 days = 1 } #Latvia Kurzeme retaken
+			}
+			LIT = {
+				country_event = { id = twrlithuania.4 days = 1 } #Lithuania Kurzeme lost
+			}
+		}
+	}
 }
 }
