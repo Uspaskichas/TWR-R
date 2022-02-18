@@ -8,7 +8,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event twrlithuania.0"}
 	title = twrlithuania.0.t
 	desc = twrlithuania.0.d
-	picture = GFX_report_event_ostland_map
+	picture = GFX_report_event_lithuanian_independence
 
 	fire_only_once = yes
 	
@@ -24,7 +24,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event twrlithuania.1"}
 	title = twrlithuania.1.t
 	desc = twrlithuania.1.d
-	picture = GFX_report_event_ostland_map
+	picture = GFX_report_event_lithuania_kurzeme
 
 	fire_only_once = yes
 	
@@ -51,7 +51,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event twrlithuania.2"}
 	title = twrlithuania.2.t
 	desc = twrlithuania.2.d
-	picture = GFX_report_event_ostland_map
+	picture = GFX_report_event_lithuanian_victory_in_latvia
 
 	fire_only_once = yes
 	
@@ -64,12 +64,8 @@ country_event = {
 				transfer_state = 12
 				transfer_state = 1017
 			  }
-	    LIT = {
-		add_state_core = 190
-		}
         hidden_effect = {
 		LIT = {
-		add_state_core = 190
 		add_stability = 0.10
 		add_political_power = 50
 		puppet = LAT
@@ -83,9 +79,71 @@ country_event = {
 	option = {
 		name = twrlithuania.2.b
 		LIT = {
-		add_state_core = 190
 		add_stability = -0.10
 		add_political_power = -50
 		}
+	}
+	
+	option = {
+		name = twrlithuania.2.c
+		LAT = {
+				transfer_state = 1032
+				transfer_state = 12
+				transfer_state = 1017
+				transfer_state = 190
+			  }
+	    hidden_effect = {
+		LIT = {
+		add_stability = 0.10
+		add_political_power = 50
+		puppet = LAT
+		}
+		LAT = {
+		add_stability = -0.10
+		}
+		}
+	}
+}
+
+country_event = {
+	id = twrlithuania.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrlithuania.3"}
+	title = twrlithuania.3.t
+	desc = twrlithuania.3.d
+	picture = GFX_report_event_latvia_kurzeme_question
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = twrlithuania.3.a
+		LIT = {
+		country_event = { id = twrlithuania.1 days = 2 } 	
+        }		
+	}
+	
+	option = {
+		name = twrlithuania.3.b
+	}
+}
+
+country_event = {
+	id = twrlithuania.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event twrlithuania.4"}
+	title = twrlithuania.4.t
+	desc = twrlithuania.4.d
+	picture = GFX_report_event_latvia_kurzeme_is_back
+
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = twrlithuania.4.a
+		LAT = {
+		transfer_state = 190
+		diplomatic_relation = { country = LIT relation = war_relation active = no }
+        }		
 	}
 }
