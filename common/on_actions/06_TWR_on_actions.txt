@@ -25,6 +25,9 @@ on_actions = {
 			limit = {
 				AND = {
 					OR = {
+					LAT = {
+					has_war_with = LIT
+					}
 					190 = { is_controlled_by = LAT }
 					11 = { is_controlled_by = LAT }
 					805 = { is_controlled_by = LAT }
