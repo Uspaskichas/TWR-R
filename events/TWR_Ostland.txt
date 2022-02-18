@@ -671,8 +671,10 @@ country_event = {
 					}
 				}
 				LIT = {
-				transfer_state = 190
-				country_event = { id = twrlithuania.1 days = 2 } 		
+				transfer_state = 190	
+				}
+				LAT = {
+				country_event = { id = twrlithuania.3 days = 1 } 		
 				}
 				else = {
 				LAT = {
